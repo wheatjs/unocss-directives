@@ -1,6 +1,6 @@
 {
   "name": "unocss-directives",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "CSS Directive support for UnoCss",
   "scripts": {
     "test": "vitest",
@@ -19,7 +19,11 @@
     "directory": "packages/vite"
   },
   "homepage": "https://github.com/wheatjs/unocss-directives#readme",
-  "keywords": ["unocss", "vite", "vite-plugin"],
+  "keywords": [
+    "unocss",
+    "vite",
+    "vite-plugin"
+  ],
   "author": "Jacob Clevenger <jacobrclevenger@gmail.com>",
   "license": "MIT",
   "sideEffects": false,
