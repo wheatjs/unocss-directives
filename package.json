@@ -43,7 +43,8 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "*.d.ts"
   ],
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
