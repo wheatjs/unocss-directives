@@ -1,8 +1,7 @@
 {
   "name": "unocss-directives",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "CSS Directive support for UnoCss",
   "scripts": {
     "test": "vitest",
     "build": "tsup",
@@ -11,12 +10,39 @@
     "lint:fix": "nr lint -- --fix",
     "release": "bumpp package.json --commit --push --tag"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wheatjs/unocss-directives/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wheatjs/unocss-directives.git",
+    "directory": "packages/vite"
+  },
+  "homepage": "https://github.com/wheatjs/unocss-directives#readme",
+  "keywords": ["unocss", "vite", "vite-plugin"],
+  "author": "Jacob Clevenger <jacobrclevenger@gmail.com>",
+  "license": "MIT",
+  "sideEffects": false,
   "dependencies": {
     "@unocss/config": "^0.25.0"
   },
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./vite": {
+      "require": "./dist/vite.js",
+      "import": "./dist/vite.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
   "devDependencies": {
     "@antfu/eslint-config": "^0.16.1",
     "@types/node": "^17.0.18",

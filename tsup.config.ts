@@ -5,6 +5,7 @@ export default defineConfig({
   splitting: false,
   sourcemap: true,
   dts: true,
+  format: ['cjs', 'esm'],
   external: [
     'vite',
     'unocss',
