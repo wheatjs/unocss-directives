@@ -1,0 +1,6 @@
+{
+  "extends": "@antfu/eslint-config",
+  "rules": {
+    "no-undef": "off"
+  }
+}
