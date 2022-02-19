@@ -39,7 +39,7 @@
     "./vite": {
       "require": "./dist/vite.js",
       "import": "./dist/vite.mjs",
-      "types": "./dist/index.d.ts"
+      "types": "./dist/vite.d.ts"
     }
   },
   "files": [
